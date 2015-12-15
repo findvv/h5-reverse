@@ -50,8 +50,8 @@
 @s5-a2:1.5s;
 @s5-d2:0.8s;
 // 徽章过渡时间与延迟
-@s5-a3:1.8s;
-@s5-d3:1.52s;
+@s5-a3:1s;
+@s5-d3:1.6s;
 // 人过渡时间与延迟
 @s5-a4:1s;
 @s5-d4:2.3s;
@@ -124,7 +124,7 @@
 // 帧图速度
 @s11-a1:0.4s;
 // 整体上移速度与延迟
-@s11-a2:3s;
+@s11-a2:4s;
 @s11-d2:0.5s;
 
 // 第七屏过渡
@@ -341,7 +341,7 @@ img {
     z-index: 2;
   }
   .a6 {
-    top: 140px;
+    top: 160px;
     left: 86px;
     z-index: 2;
     transform: translate3d(0, -500px, 0);
@@ -458,7 +458,7 @@ img {
     z-index: 1;
     left: 100px;
     bottom: -180px;
-    transition: @s5-a3 all @s5-d3;
+    transition: @s5-a3 all linear @s5-d3 ;
     transform: translate3d(0,0,0);
   }
   .b6 {
@@ -751,13 +751,14 @@ img {
 #e9{
   z-index: @zindex - 6;
   background-color: #eee;
+  height: 2119px !important;
   background-image: url(../img/33.png);
   transition:@s11-a2 all @s11-d2;
-  transform:translate3d(0,1136px,0);
+  transform:translate3d(0,2119px,0);
   transition-timing-function: linear;
   animation: p11 @s11-a1 step-start 0s infinite;
   &.p9-1{
-    transform:translate3d(0,-1136px,0);
+    transform:translate3d(0,-2119px,0);
   }
   &.p9-2{
     transition:0s all 0s;

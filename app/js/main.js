@@ -76,41 +76,6 @@ function transitionEnd(id, func) {
     func();
   }, false);
 }
-//预加载
-function resLoader({
-  resources = [], onStart = null, onProgress = null, onComplete = null
-}) {
-  this.status = 0;
-  this.total = resources.length || 0;
-  this.currentIndex = 0;
-  this.resources = resources;
-  this.onStart = onStart;
-  this.onProgress = onProgress;
-  this.onComplete = onComplete;
-}
-resLoader.prototype.start = function() {
-  this.status = 1;
-  var _this = this;
-  for (var i = 0, l = this.resources.length; i < l; i++) {
-    var url = this.resources[i];
-    var image = new Image();
-    image.onload = function() {
-      _this.loaded();
-    }
-    image.onerror = function() {
-      _this.loaded();
-    }
-    image.src = url;
-  }
-  this.onStart(this.total);
-}
-resLoader.prototype.loaded = function() {
-  this.onProgress(++this.currentIndex, this.total);
-  if (this.currentIndex === this.total) {
-    this.onComplete(this.total);
-  }
-}
-
 function zhengCtrl() {
   switch (num) {
     case 0:
@@ -171,7 +136,6 @@ function zhengCtrl() {
   }
   num += 1;
 }
-
 function fanCtrl() {
   switch (num) {
     case 1:
@@ -272,7 +236,7 @@ function animateCtrl(){
         findId('e10').className = 'p10-1';
         findId('e8').className = 'p8-2';
         openF = true;
-      }, 1500); //@s12-a2
+      }, 3000); //@s12-a2
       break;
     case 8:
       findId('e11').className = 'p11-2';
@@ -308,6 +272,7 @@ function animateCtrl(){
       });
       break;
     case 5:
+      findId('e5').className = 'p5-2';
       findId('e7').className = 'p7-2';
       transitionEnd('e7', function() {
         findId('e8').className = 'p8-1';
@@ -335,7 +300,11 @@ function animateCtrl(){
   num += 1;
 }
 findId('button').onclick = function(){
-  animateCtrl();
+  if (openZ||openF) {
+    openZ = false;
+    openF = false;
+    animateCtrl();
+  }  
 }
 var loader = new resLoader({
   resources: allImgs,
