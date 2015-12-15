@@ -1,0 +1,982 @@
+@zindex:100;
+// 动画速度
+
+// loading
+@loading: 0.64s;
+
+// 第一屏
+@s1:0.7s;
+
+// 第一屏到第二屏过渡
+@s2:0.4s;
+
+//第二屏
+//双人平移过渡时间与延迟
+@s3-a1:0.8s;
+@s3-d1:0.5s;
+//字体平移过渡时间与延迟
+@s3-a2:0.8s;
+@s3-d2:1s;
+//中间饭盒整体过渡时间与延迟
+@s3-a3:0.8s;
+@s3-d3:0s;
+// 双人、人群、米饭抖动速度与延迟
+@s3-a4:0.2s;
+@s3-d4:2s;
+@s3-a5:0.2s;
+@s3-d5:1.5s;
+@s3-a6:0.2s;
+@s3-d6:1.8s;
+
+//第二屏到第三屏过渡
+// 碗平移过渡时间与延迟
+@s4-a1:0.6s;
+@s4-d1:0s;
+// 双人平移过渡时间与延迟
+@s4-a2:0.4s;
+@s4-d2:0s;
+// 字体平移过渡时间与延迟
+@s4-a3:0.4s;
+@s4-d3:0s;
+// 米饭掉落过渡时间与延迟
+@s4-a4:0.6s;
+@s4-d4:0s;
+
+//第三屏
+// 猪抖动过渡时间与延迟
+@s5-a1:0.2s;
+@s5-d1:0.4s;
+// 胳膊过渡时间与延迟
+@s5-a2:1.5s;
+@s5-d2:0.8s;
+// 徽章过渡时间与延迟
+@s5-a3:1.8s;
+@s5-d3:1.52s;
+// 人过渡时间与延迟
+@s5-a4:1s;
+@s5-d4:2.3s;
+// 字体过渡时间与延迟
+@s5-a5:1s;
+@s5-d5:2.8s;
+// 眼泪过渡时间与延迟
+@s5-a6:1s;
+@s5-d6:3.8s;
+// 第三屏到第四屏过渡时间
+@s5-a7:0.5s;
+
+//第四屏
+//四朵云的动画与延迟
+@s6-a1:1s;
+@s6-d1:0s;
+@s6-a2:1s;
+@s6-d2:0s;
+@s6-a3:1.5s;
+@s6-d3:0.3s;
+@s6-a4:1.8s;
+@s6-d4:0s;
+// 太阳
+@s6-a5:1s;
+@s6-d5:1.2s;
+// 文字
+@s6-a6:0.5s;
+@s6-d6:1.5s;
+// 超人帧图速度与运动速度和延迟
+@s6-a71:0.2s;
+@s6-a72:1s;
+@s6-d7:0.5s;
+
+//第四屏到第五屏过渡
+@s7-a1:1s;
+@s7-d1:0.3s;
+
+// 第五屏
+// 帧图速度
+@s8-a1:0.2s;
+@s8-a2:0.48s;
+// 字体放大速度与延迟
+@s8-a3:1s;
+@s8-d3:1.2s;
+//熊平移
+@s8-a4:1s;
+@s8-d4:0s;
+// 山体平移
+@s8-a5:1s;
+@s8-d5:0s;
+// 钱
+@s8-a6:1s;
+@s8-d6:1s;
+
+// 第五屏到第六屏过渡时间
+@s9:0.5s;
+
+// 第六屏
+// 整体上移速度与延迟
+@s10-a1:1s;
+@s10-d1:0s;
+// 帧图速度
+@s10-a2:0.3s;
+@s10-a3:0.36s;
+// 字体出现速度
+@s10-a4:0.8s;
+@s10-d4:1.3s;
+
+// 第六屏到第七屏过渡
+// 帧图速度
+@s11-a1:0.4s;
+// 整体上移速度与延迟
+@s11-a2:3s;
+@s11-d2:0.5s;
+
+// 第七屏过渡
+// 帧图速度
+@s12-a1:0.72s;
+// 整体上移速度与延迟
+@s12-a2:2s;
+@s12-d2:0s;
+// 字体出现速度与延迟
+@s12-a3:1s;
+@s12-d3:2.5s;
+// 整体消失速度
+@s12-a4:0.4s;
+@s12-d4:0s;
+
+// 第八屏
+// 帧图速度
+@s13-a1:0.24s;
+@s13-d1:0.2s;
+@s13-a2:0.24s;
+@s13-d2:0s;
+// 字体出现速度
+@s13-a3:0.5s;
+@s13-d3:0.5s;
+// 整体消失速度
+@s13-a4:1s;
+@s13-d4:0s;
+
+// 第八屏到第九屏过渡
+// 帧图速度
+@s14-a1:1.2s;
+@s14-d1:0.1s;
+
+// 第九屏
+// 帧图速度
+@s15-a1:0.8s;
+@s15-d1:0s;
+// 字体出现速度
+@s15-a2:0.5s;
+@s15-d2:0.8s;
+// 整体消失速度
+@s15-a3:0.8s;
+@s15-d3:0s;
+
+// 第十屏
+// 整体出现速度
+@s16-a1:0.8s;
+@s16-d1:0s;
+// 帧图速度
+@s16-a2:0.5s;
+@s16-d2:0s;
+// 球渐现速度
+@s16-a3:0.5s;
+@s16-d3:0.5s;
+// 字体放大速度
+@s16-a4:0.5s;
+@s16-d4:0.8s;
+
+// 第十一屏
+// 帧图速度
+@s17-a1:0.5s;
+@s17-d1:0s;
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #eee;
+}
+
+#all {
+  width: 640px;
+  height: 1136px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: top left;
+  overflow: hidden;
+}
+
+#all>div {
+  width: 640px;
+  height: 1136px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+img {
+  position: absolute;
+}
+
+//loading
+#e0 {
+  z-index: @zindex;
+  transition: all .8s;
+  opacity: 1;
+  background-color: #fff;
+  &.p0{
+    opacity: 0;
+  }
+  #load-img{
+    opacity: 0;
+  }
+  p{
+    position: absolute;
+    display: block;
+    width:207px;
+    height:235px;
+    animation: loading @loading step-start 0s infinite normal;
+    background: url(../img/0.png);
+    top: 300px;
+    left: 216px;
+  }
+  span{
+    position: absolute;
+    width: 640px;
+    left: 0;
+    top: 550px;
+    font-size: 34px;
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+  }
+}
+@keyframes loading{
+  0% {background-position: 0px 0;}
+  12.5% {background-position: -207px 0;}
+  25% {background-position: -414px 0;}
+  37.5% {background-position: -621px 0;}
+  50% {background-position: -828px 0;}
+  62.5% {background-position: -1035px 0;}
+  75% {background-position: -1242px 0;}
+  87.5% {background-position: -1449px 0;}
+  100% {background-position: 0 0;}
+}
+//第一屏
+#e1 {
+  background-image: url(../img/1.jpg);
+  z-index: @zindex - 1;
+  &.p1-1{
+    opacity: 1;
+    animation: p1 @s1 step-start 0s infinite normal;
+  }
+  &.p1-2{
+    opacity: 0;
+  }
+}
+@keyframes p1 {
+  0% {background-position: 0 0;}
+  14.285714285714286% {background-position: -640px 0;}
+  28.571428571428573% {background-position: -1280px 0;}
+  42.85714285714286% {background-position: -1920px 0;}
+  57.142857142857146% {background-position: -2560px 0;}
+  71.42857142857143% {background-position: -3200px 0;}
+  85.71428571428572% {background-position: -3840px 0;}
+  100% {background-position: 0 0;}
+}
+// 第一屏到第二屏过渡
+#e2 {
+  background-image: url(http://mfiles.sohu.com/news/fanzhuanchinazzx/img/2.jpg);
+  z-index: @zindex - 2;
+  animation: p1 @s1 step-start 0s infinite normal;
+  animation-fill-mode: forwards;
+  &.p2-1{
+    opacity: 1;
+    animation: p2 @s2 step-start 0s 1 normal;
+  }
+  &.p2-2{
+    opacity: 0;
+  }
+}
+@keyframes p2 {
+  0% {background-position: 0 0;}
+  14.285714285714286% {background-position: -640px 0;}
+  28.571428571428573% {background-position: -1280px 0;}
+  42.85714285714286% {background-position: -1920px 0;}
+  57.142857142857146% {background-position: -2560px 0;}
+  71.42857142857143% {background-position: -3200px 0;}
+  85.71428571428572% {background-position: -3840px 0;}
+  100% {background-position: -4480px 0;}
+}
+//第二屏以及第二屏到第三屏过渡
+#e3 {
+  z-index: @zindex - 3;
+  background-color: #eeeeee;
+  transform: rotate(180deg);
+  .a1 {
+    bottom: 190px;
+    left: 74px;
+    z-index: 3;
+  }
+  .a2 {
+    bottom: -40px;
+    left: 10px;
+    z-index: 4;
+    transform: translate3d(0, 400px, 0);
+    transition: @s3-a1 all @s3-d1;
+  }
+  .a3 {
+    bottom: 350px;
+    left: 199px;
+    z-index: 5;
+  }
+  .a4 {
+    bottom: 340px;
+    left: 0;
+    z-index: 1;
+  }
+  .a5 {
+    bottom: 465px;
+    left: 75px;
+    z-index: 2;
+  }
+  .a6 {
+    top: 140px;
+    left: 86px;
+    z-index: 2;
+    transform: translate3d(0, -500px, 0);
+    transition: @s3-a2 all @s3-d2;
+  }
+  .a7 {
+    bottom: 0px;
+    left: 0;
+    opacity: 0;
+  }
+  .an1 {
+    width: 640px;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    height: 720px;
+    opacity: 0;
+    transition: @s3-a3 all @s3-d3;
+  }
+  &.p3-1{
+    opacity: 1;
+    .an1 {
+      opacity: 1;
+    }
+    .a2 {
+      transform: translate3d(0, 0, 0);
+      animation: shake3 @s3-a4 linear @s3-d4 infinite;
+    }
+    .a6 {
+      transform: translate3d(0, 0, 0);
+    }
+    .a4 {
+      animation: shake1 @s3-a5 linear @s3-d5 infinite;
+    }
+    .a5 {
+      animation: shake2 @s3-a6 linear @s3-d6 infinite;
+    }
+  }
+  &.p3-2{
+    .an1 {
+      opacity: 1;
+      .a3 {
+        opacity: 0;
+      }
+      .a4 {
+        opacity: 0;
+      }
+    }
+    .a1 {
+      transition: @s4-a1 all @s4-d1;
+      transform: translate3d(0, 290px, 0);
+    }
+    .a2 {
+      transition: @s4-a2 all @s4-d2;
+    }
+    .a5 {
+      opacity: 0;
+    }
+    .a6 {
+      transition: @s4-a3 all @s4-d3;
+    }
+    .a7 {
+      opacity: 1;
+      transition: @s4-a4 all @s4-d4;
+      transform: translate3d(0, -800px, 0);
+    }
+  }
+  &.p3-3 {
+    opacity: 0;
+  }
+}
+@keyframes shake1 {
+  0% {transform: translate3d(0, -2px, 0)}
+  100% {transform: translate3d(0, 2px, 0)}
+}
+@keyframes shake2 {
+  0% {transform: translate3d(0, -3px, 0)}
+  100% {transform: translate3d(0, 3px, 0)}
+}
+@keyframes shake3 {
+  0% {transform: translate3d(0, -10px, 0)}
+  100% {transform: translate3d(0, 10px, 0)}
+}
+// 第三屏
+#e4 {
+  background-color: #eeeeee;
+  z-index: @zindex - 4;
+  transition:@s5-a7 all;
+  .b1 {
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+  }
+  .b2 {
+    bottom: 240px;
+    left: 200px;
+    z-index: 2;
+    opacity: 0;
+    transition: @s5-a4 all @s5-d4;
+  }
+  .b3 {
+    right: 260px;
+    top: 650px;
+    z-index: 5;
+    opacity: 0;
+  }
+  .b4 {
+    left: 115px;
+    top: 0;
+    z-index: 2;
+    transform: translate3d(0,-100%,0);
+  }
+  .b5 {
+    z-index: 1;
+    left: 100px;
+    bottom: -180px;
+    transition: @s5-a3 all @s5-d3;
+    transform: translate3d(0,0,0);
+  }
+  .b6 {
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+  }
+  .b7 {
+    left: 85px;
+    top: 100px;
+    z-index: 3;
+    opacity: 0;
+    transition: @s5-a5 all @s5-d5;
+  }
+  &.p4-1{
+    .b6 {
+      animation: shake3 @s5-a1 ease @s5-d1 infinite;
+    }
+    .b2{
+      opacity: 1;
+    }
+    .b3{
+      animation: p5 @s5-a6 linear @s5-d6 1;
+      animation-fill-mode: forwards;
+    }
+    .b4 {
+      animation: p4 @s5-a2 linear @s5-d2 1;
+      animation-fill-mode: forwards;
+    }
+    .b5{
+      transform: translate3d(0,-1400px,0);
+    }
+    .b7{
+      opacity: 1;
+    }
+  }
+  &.p4-2{
+    opacity: 0;
+  }
+}
+@keyframes p4 {
+  0% {transform: translate3d(0,-100%,0);}
+  50% {transform: translate3d(0,0,0);}
+  100% {transform: translate3d(0,-100%,0);}
+}
+@keyframes p5 {
+  0% {opacity: 1;transform: translate3d(0,0,0);}
+  50% {opacity: 1;transform: translate3d(0,100px,0);}
+  100% {opacity: 0;transform: translate3d(0,200px,0);}
+}
+// 第四屏
+#e5{
+  z-index: @zindex - 5;
+  background-color: #eeeeee;
+  transform: rotate(180deg);
+  .c1{
+    left: 0;
+    top: 350px;
+    transform:translate3d(100%,0,0);
+    z-index: 4;
+    transition:@s6-a1 all @s6-d1;
+  }
+  .c2{
+    top: 250px;
+    left: 0;
+    z-index: 3;
+    transition:@s6-a2 all @s6-d2;
+    transform:translate3d(-100%,0,0);
+  }
+  .c3{
+    top: 100px;
+    z-index: 2;
+    transform:matrix(0.866,0.5,-0.5,0.866,1000,500);
+    transition:@s6-a3 all @s6-d3;
+  }
+  .c4{
+    top: 80px;
+    z-index: 2;
+    transform: matrix(-.965926,.258819,-.258819,-.965926,-1000,100);
+    transition:@s6-a4 all @s6-d4;
+  }
+  .c5{
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    transition:@s6-a5 all @s6-d5;
+  }
+  .c6{
+    opacity: 0;
+    bottom: 50px;
+    left:50px;
+    transition:@s6-a6 all @s6-d6;
+  }
+  #c7{
+    position: absolute;
+    width:583px;
+    height:736px;
+    top: 120px;
+    left: 0;
+    z-index: 5;
+    background-image: url(../img/17.png);
+    animation: p6 @s6-a71 step-start 0s infinite;
+    transform: translate3d(-300px,1200px,0);
+    transition:@s6-a72 all @s6-d7;
+  }
+  &.p5-1{
+    .c1{
+      transform:translate3d(0,0,0);
+    }
+    .c2{
+      transform:translate3d(-60%,0,0);
+    }
+    .c3{
+      transform: matrix(.866,.5,-.5,.866,-700,-500);
+    }
+    .c4{
+      transform: matrix(-.965926,.258819,-.258819,-.965926,500,-600);
+    }
+    .c5{
+      opacity: 1;
+    }
+    .c6{
+      opacity: 1;
+    }
+    #c7{
+      transform: translate3d(0,0,0);
+      &.c7{
+        transition:@s6-a72 all 0;
+        transform: translate3d(300px,-800px,0);
+      }
+    }
+  }
+  &.p5-2{
+    opacity: 0;
+  }
+}
+@keyframes p6{0% {background-position: 0px 0;}50% {background-position: -583px 0;}100% {background-position: 0 0;}}
+
+// 第四屏到第五屏
+#e6{
+  z-index: @zindex - 4;
+  opacity: 0;
+  .d1{
+    transform: translate3d(-100%,-20%,0);
+    transition:1s all;
+  }
+  .d2{
+    transform: translate3d(100%,20%,0);
+    transition:1s all;
+  }
+  .d3{
+    transform: translate3d(-100%,80%,0);
+    transition:1s all;
+  }
+  .d4{
+    transform: translate3d(100%,60%,0);
+    transition:1s all;
+  }
+  &.p6-1{
+    opacity: 1;
+  }
+  &.p6-2{
+    opacity: 1;
+    .d1{
+      transform: translate3d(-20%,0,0);
+      transition:@s7-a1 all @s7-d1;
+    }
+    .d2{
+      transform: translate3d(0%,50%,0);
+      transition:@s7-a1 all @s7-d1;
+    }
+    .d3{
+      transform: translate3d(-20%,80%,0);
+      transition:@s7-a1 all @s7-d1;
+    }
+    .d4{
+      transform: translate3d(0%,180%,0);
+      transition:@s7-a1 all @s7-d1;
+    }
+  }
+}
+// 第五屏
+#e7{
+  z-index: @zindex - 6;
+  background-color: #eeeeee;
+  opacity: 1;
+  transition:@s9 all;
+  .f1{
+    top:-50px;
+    left: 0;
+    z-index: 1;
+    transform:translate3d(0,-100%,0);
+    transition:@s8-a5 all @s8-d5;
+  }
+  .f2{
+    bottom: 150px;
+    left: 68px;
+    z-index: 2;
+    transform:scale(0);
+    transition:@s8-a3 all @s8-d3;
+  }
+  .f3{
+    position: absolute;
+    width:351px;
+    height:450px;
+    left: 160px;
+    top: 50px;
+    z-index: 2;
+    background-image: url(../img/26.png);
+    animation: p7 @s8-a1 step-start 0s infinite;
+    transform:translate3d(0,-150%,0);
+    transition:@s8-a4 all @s8-d4;
+  }
+  .f4{
+    position: absolute;
+    width:640px;
+    height:418px;
+    left: 0;
+    top: 300px;
+    z-index: 2;
+    background-image: url(../img/27.png);
+    animation: p8 @s8-a2 step-start 0s infinite;
+    opacity: 0;
+    transition:@s8-a6 all @s8-d6;
+  }
+  &.p7-1{
+    .f1,.f3{
+      transform:translate3d(0,0,0);
+    }
+    .f2{
+      transform:scale(1);
+    }
+    .f4{
+      opacity: 1;
+    }
+  }
+  &.p7-2{
+    opacity: 0;
+  }
+}
+@keyframes p7{0% {background-position: 0px 0;}50% {background-position: -351px 0;}100% {background-position: 0 0;}}
+@keyframes p8{0% {background-position: 0px 0;}25% {background-position: -640px 0;}50% {background-position: -1280px 0;}75% {background-position: -1920px 0;}100% {background-position: 0 0;}}
+// 第六屏
+#e8{
+  z-index: @zindex - 7;
+  background-color: #eeeeee;
+  transform: matrix(-1,0,0,-1,0,-1136);
+  transition:@s10-a1 all @s10-d1;
+  .g1{
+    position: absolute;
+    width:640px;
+    height:624px;
+    left: 0;
+    bottom: -80px;
+    z-index: 1;
+    background-image: url(../img/30.png);
+    animation: p9 @s10-a2 step-start 0s infinite;
+  }
+  .g2{
+    position: absolute;
+    width:640px;
+    height:1136px;
+    left: 0;
+    top: 80px;
+    z-index: 2;
+    background-image: url(../img/31.png);
+    animation: p10 @s10-a3 step-start 0s infinite;
+  }
+  .g3{
+    top: 150px;
+    z-index: 3;
+    opacity: 0;
+    transition:@s10-a4 all @s10-d4;
+  }
+  &.p8-1{
+    transform: matrix(-1,0,0,-1,0,0);
+    .g3{
+      opacity: 1;
+    }
+  }
+  &.p8-2{
+    transition:0s all 0;
+    opacity: 0;
+  }
+}
+@keyframes p9{0% {background-position: 0px 0;}50% {background-position: -640px 0;}100% {background-position: 0 0;}}
+@keyframes p10{0% {background-position: 0px 0;}33.333333333333336% {background-position: -640px 0;}66.66666666666667% {background-position: -1280px 0;}100% {background-position: 0 0;}}
+// 第六屏到第七屏过渡
+#e9{
+  z-index: @zindex - 6;
+  background-color: #eee;
+  background-image: url(../img/33.png);
+  transition:@s11-a2 all @s11-d2;
+  transform:translate3d(0,1136px,0);
+  transition-timing-function: linear;
+  animation: p11 @s11-a1 step-start 0s infinite;
+  &.p9-1{
+    transform:translate3d(0,-1136px,0);
+  }
+  &.p9-2{
+    transition:0s all 0s;
+    opacity: 0;
+  }
+}
+@keyframes p11{0% {background-position: 0px 0;}50% {background-position: -640px 0;}100% {background-position: 0 0;}}
+
+// 第七屏
+#e10{
+  z-index: @zindex - 8;
+  background-color: #eee;
+  background-image: url(../img/35.png);
+  transition:@s12-a2 all @s12-d2;
+  transform:translate3d(0,100%,0);
+  transition-timing-function: linear;
+  animation: p12 @s12-a1 step-start 0s infinite;
+  .h1{
+    transition:@s12-a3 all @s12-d3;
+    opacity: 0;
+    top: 100px;
+  }
+  &.p10-1{
+    transform:translate3d(0,0,0);
+    .h1{
+      opacity: 1;
+    }
+  }
+  &.p10-2{
+    transform:translate3d(0,0,0);
+    transition:@s12-a4 all @s12-d4;
+    opacity: 0;
+  }
+
+}
+@keyframes p12{0% {background-position: 0px 0;}16.666666666666668% {background-position: -640px 0;}33.333333333333336% {background-position: -1280px 0;}50% {background-position: -1920px 0;}66.66666666666667% {background-position: -2560px 0;}83.33333333333334% {background-position: -3200px 0;}100% {background-position: 0 0;}}
+
+// 第八屏
+#e11{
+  z-index: @zindex - 9;
+  transform: rotate(180deg);
+  background-color: #eee;
+  opacity: 0;
+  transition:@s13-a4 all @s13-d4;
+  .i1{
+    position: absolute;
+    width:640px;
+    height:439px;
+    left: 0;
+    bottom: -50px;
+    z-index: 3;
+    background-image: url(../img/36.png);
+    animation: p13 @s13-a1 step-start @s13-d1 infinite;
+  }
+  .i2{
+    position: absolute;
+    width:640px;
+    height:760px;
+    left: 0;
+    bottom: -30px;
+    z-index: 1;
+    background-image: url(../img/37.png);
+    animation: p13 @s13-a2 step-start @s13-d2 infinite;
+  }
+  .i3{
+    bottom: -50px;
+    left: 150px;
+    z-index: 2;
+  }
+  .i4{
+    left: 180px;
+    top: 150px;
+    opacity: 0;
+    transition:@s13-a3 all @s13-d3;
+  }
+  &.p11-1{
+    opacity: 1;
+    .i4{
+      opacity: 1;
+    }
+  }
+  &.p11-2{
+    display: none;
+  }
+}
+@keyframes p13{0% {background-position: 0px 0;}50% {background-position: -640px 0;}100% {background-position: 0 0;}}
+
+// 第八屏到第九屏过渡
+#e12{
+  z-index: @zindex - 10;
+  transform: rotate(180deg);
+  opacity: 0;
+  background-image: url(../img/40.png);
+  &.p12-1{
+    opacity: 1;
+  }
+  &.p12-2{
+    opacity: 1;
+    animation: p14 @s14-a1 step-start @s14-d1 1;
+    animation-fill-mode:forwards;
+  }
+  &.p12-3{
+    opacity: 0;
+  }
+}
+@keyframes p14{0% {background-position: 0px 0;}10% {background-position: -640px 0;}20% {background-position: -1280px 0;}30% {background-position: -1920px 0;}40% {background-position: -2560px 0;}50% {background-position: -3200px 0;}60% {background-position: -3840px 0;}70% {background-position: -4480px 0;}80% {background-position: -5120px 0;}90% {background-position: -5760px 0;}100% {background-position: 0 0;}}
+#e13{
+  opacity: 0;
+  z-index: @zindex - 10;
+  background-color: #eee;
+  .j1{
+    width:640px;
+    height:736px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-image: url(../img/41.png);
+    animation: p15 @s15-a1 step-start @s15-d1 infinite;
+  }
+  .j2{
+    left: 180px;
+    top: 100px;
+    opacity: 0;
+    transition:@s15-a2 all @s15-d2;
+  }
+  &.p13-1{
+    opacity: 1;
+    .j2{
+      opacity: 1;
+    }
+  }
+  &.p13-2{
+    transition:@s15-a3 all @s15-d3;
+    opacity: 0;
+  }
+}
+@keyframes p15{0% {background-position: 0px 0;}25% {background-position: -640px 0;}50% {background-position: -1280px 0;}75% {background-position: -1920px 0;}100% {background-position: 0 0;}}
+#e14{
+  opacity: 0;
+  transform: rotate(180deg);
+  z-index: @zindex - 11;
+  transition:@s16-a1 all @s16-d1;
+  .k1{
+    width:640px;
+    height:597px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-image: url(../img/45.png);
+    animation: p16 @s16-a2 step-start @s16-d2 infinite;
+  }
+  .k2{
+    top: 250px;
+    left: 204px;
+    z-index: 1;
+    opacity: 0;
+    transition:@s16-a3 all @s16-d3;
+  }
+  .k3{
+    top: 320px;
+    left: 82.5px;
+    z-index: 2;
+    transform:scale(0);
+    transition:@s16-a4 all @s16-d4;
+  }
+  &.p14-1{
+    opacity: 1;
+    .k2{
+      opacity: 1;
+    }
+    .k3{
+      transform:scale(1);
+    }
+  }
+  &.p14-2{
+    opacity: 1;
+    .k1{
+      opacity: 0;
+    }
+    .k2{
+      opacity: 1;
+      transform:translate3d(0,600px,0);
+    }
+    .k3{
+      transition:@s16-a4 all 0s;
+      transform:scale(0);
+    }
+  }
+  &.p14-3{
+    display: none;
+  }
+}
+@keyframes p16{0% {background-position: 0px 0;}33.333333333333336% {background-position: -640px 0;}66.66666666666667% {background-position: -1280px 0;}100% {background-position: 0 0;}}
+
+#e15{
+  opacity: 0;
+  z-index: @zindex - 12;
+  .l1{
+    left: 0;
+    bottom: 0;
+  }
+  .l2{
+    top: 120px;
+    left: 0;
+    z-index: 2;
+    transform:scale(0);
+    transition:@s16-a4 all @s16-d4;
+  }
+  .l3{
+    transform: rotate(180deg);
+    bottom: 850px;
+    left: 204px;
+    z-index: 1;
+    opacity: 1;
+  }
+  &.p15-1{
+    opacity: 1;
+    .l2{
+      transform:scale(1);
+    }
+  }
+}
